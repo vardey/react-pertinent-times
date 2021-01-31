@@ -7,10 +7,10 @@ import axios from 'axios'
 
 const App =()=> {
   const key ="pODgMHMF8kA3gl6TKpcD47APzHz6AL54"
-  var section ="home"
+  const [section,setSection] =useState("home")
   
   const getCategory = (cat)=>{
-    section= cat.toLowerCase()
+    setSection(cat.toLowerCase())
     console.log("section: ",section)
     console.log("cat: ",cat)
     
